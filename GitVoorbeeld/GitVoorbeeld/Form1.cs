@@ -22,5 +22,11 @@ namespace GitVoorbeeld
             teller++;
             label1.Text = "Aantal keer geklikt: " + teller.ToString();
         }
+        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            teller = 0;
+            label1.Text = "Aantal keer geklikt: " + teller.ToString();
+        }
     }
 }
