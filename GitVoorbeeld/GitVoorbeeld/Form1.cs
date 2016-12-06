@@ -16,10 +16,17 @@ namespace GitVoorbeeld
         {
             InitializeComponent();
         }
-
+        int teller = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Text = "Hello World!";
+            teller++;
+            label1.Text = "Aantal keer geklikt: " + teller.ToString();
+        }
+        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            teller = 0;
+            label1.Text = "Aantal keer geklikt: " + teller.ToString();
         }
     }
 }
